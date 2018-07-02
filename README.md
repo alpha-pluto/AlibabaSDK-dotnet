@@ -28,10 +28,10 @@
 		var data={
 		grant_type=”authorization_code”,
 			need_refresh_token=”true”,
-		  client_id=${appKey}, //此处为应店铺的授权信息 appKey
-		  client_secret=${appSecret},//此处为应店铺的授权信息 appSecret
-		  redirect_uri=${redicectUri},////此处为接收回调的地址 
-		  code=${pre-auth-code}//此处为已经得到的预授权码
+		  	client_id=${appKey}, //此处为应店铺的授权信息 appKey
+		  	client_secret=${appSecret},//此处为应店铺的授权信息 appSecret
+		  	redirect_uri=${redicectUri},////此处为接收回调的地址 
+		  	code=${pre-auth-code}//此处为已经得到的预授权码
 		  }
 
 
@@ -60,11 +60,11 @@
 		以post 方法提交 ，并且有 参数 如下：
 
 		var data={
-		website=”1688”,
-			orderId=${orderId},
-		  includeFields=” GuaranteesTerms,NativeLogistics,RateDetail,OrderInvoice”,//参看对应的阿里文档 
-		  access_token=${access_token},
-		  _aop_signature=${_aop_signature }//此处通过url算出的签名
+			website=”1688”,
+		  	orderId=${orderId},
+		  	includeFields=” GuaranteesTerms,NativeLogistics,RateDetail,OrderInvoice”,//参看对应的阿里文档 
+		  	access_token=${access_token},
+		  	_aop_signature=${_aop_signature }//此处通过url算出的签名
 		}
 
 
