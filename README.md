@@ -26,7 +26,7 @@
 		以post 方法提交 ，并且有 参数 如下：
 
 		var data={
-		grant_type=”authorization_code”,
+			grant_type=”authorization_code”,
 			need_refresh_token=”true”,
 		  	client_id=${appKey}, //此处为应店铺的授权信息 appKey
 		  	client_secret=${appSecret},//此处为应店铺的授权信息 appSecret
