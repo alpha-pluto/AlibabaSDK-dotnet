@@ -21,16 +21,16 @@ namespace Com.Alibaba.Test
         [TestMethod]
         public void TestGetAuthorizationUrl()
         {
-            var clientId = "2924126";// "8044678";
-            var authUrl = Com.Alibaba.Open.OAuthAPIs.OAuthApi.GetAuthorizeUrl(clientId, state: "yiwuask");
+            var clientId = "******";
+            var authUrl = Com.Alibaba.Open.OAuthAPIs.OAuthApi.GetAuthorizeUrl(clientId, state: "eastmall.vip");
             Console.WriteLine(authUrl);
         }
 
         [TestMethod]
         public void TestGetAccessToken()
         {
-            var client_id = "2924126";// "8044678";
-            var client_secret = "otkQk6pCuN";// "4kFn1NKOJ8a";
+            var client_id = "*****";
+            var client_secret = "*****";
             var redirect_uri = @"http://localhost:12305";
             var pre_auth_code = "b9cb4720-0d31-4f12-9b8c-c83a313c370c";
 
@@ -41,9 +41,9 @@ namespace Com.Alibaba.Test
         [TestMethod]
         public void TestRefreshAccessToken()
         {
-            var client_id = "8044678";
-            var client_secret = "4kFn1NKOJ8a";
-            var refresh_token = "2f3b7f3e-b618-457d-91db-4849f0c98b66";
+            var client_id = "*****";
+            var client_secret = "*****";
+            var refresh_token = "***********";
 
             var accessToken = Com.Alibaba.Open.OAuthAPIs.OAuthApi.RefreshAccessToken(
                 clientId: client_id,
@@ -57,10 +57,10 @@ namespace Com.Alibaba.Test
         [TestMethod]
         public void TestRenewRefreshToken()
         {
-            var client_id = "8044678";
-            var client_secret = "4kFn1NKOJ8a";
-            var access_token = "722de3de-9ada-4d99-ab6a-b335dd78cc3c";
-            var refresh_token = "2f3b7f3e-b618-457d-91db-4849f0c98b66";
+            var client_id = "*****";
+            var client_secret = "*****";
+            var access_token = "*********";
+            var refresh_token = "*************";
 
             var token = Com.Alibaba.Open.OAuthAPIs.OAuthApi.RenewRefreshToken(clientId: client_id, clientSecret: client_secret, refreshToken: refresh_token, accessToken: access_token);
             Console.WriteLine("accessToken {0} , refreshToken {1}, time {2}", token.access_token, token.refresh_token, token.RefreshTokenTimeout);
@@ -98,8 +98,8 @@ namespace Com.Alibaba.Test
                 var requestPolicy = new Com.Alibaba.Entities.Request.RequestPolicy
                 {
 
-                    ClientId = "2924126",//
-                    ClientSecret = "otkQk6pCuN",// 
+                    ClientId = "*****",//
+                    ClientSecret = "*****",// 
                     AccessToken = "c4cdb98e-8621-4fa5-80a4-2dbc7bd7c0e6",
                     ApiRoot = "openapi",
                     ApiVersion = "1",
@@ -144,8 +144,8 @@ namespace Com.Alibaba.Test
                 var requestPolicy = new Com.Alibaba.Entities.Request.RequestPolicy
                 {
 
-                    ClientId = "2924126",//
-                    ClientSecret = "otkQk6pCuN",// 
+                    ClientId = "*****",//
+                    ClientSecret = "*****",// 
                     AccessToken = "c4cdb98e-8621-4fa5-80a4-2dbc7bd7c0e6",
                     ApiRoot = "openapi",
                     ApiVersion = "1",
